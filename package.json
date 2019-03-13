@@ -1,0 +1,21 @@
+{
+  "name": "express-boilerplate",
+  "version": "0.0.1",
+  "main": "index.js",
+  "license": "UNLICENSED",
+  "author": "Gianluca Pengo<gianluca.pengo@gmail.com>",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "node src/index.spec.js",
+    "lint": "eslint src/**/*.js"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "4.19.1",
+    "eslint-config-airbnb": "16.1.0",
+    "eslint-config-airbnb-base": "12.1.0",
+    "eslint-plugin-import": "2.12.0",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.12.4"
+  }
+}
