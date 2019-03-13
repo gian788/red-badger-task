@@ -6,16 +6,18 @@
   "author": "Gianluca Pengo<gianluca.pengo@gmail.com>",
   "scripts": {
     "start": "node src/index.js",
-    "test": "node src/index.spec.js",
+    "test": "mocha \"src/*.spec.js\" \"src/**/*.spec.js\"",
     "lint": "eslint src/**/*.js"
   },
   "dependencies": {},
   "devDependencies": {
+    "chai": "^4.2.0",
     "eslint": "4.19.1",
     "eslint-config-airbnb": "16.1.0",
     "eslint-config-airbnb-base": "12.1.0",
     "eslint-plugin-import": "2.12.0",
     "eslint-plugin-jsx-a11y": "^6.2.1",
-    "eslint-plugin-react": "^7.12.4"
+    "eslint-plugin-react": "^7.12.4",
+    "mocha": "^5.2.0"
   }
 }

@@ -1,5 +1,5 @@
-const assert = require('assert');
-const getFinalPositions = require('./index');
+const { expect } = require('chai');
+const getFinalPositions = require('./getRobotFinalPositions');
 
 const matrixSize = [5, 3];
 const input = [
@@ -22,4 +22,8 @@ const expectedOutput = [
   [2, 3, 'S'],
 ];
 
-assert.equal(getFinalPositions(matrixSize, input), expectedOutput);
+describe('getRobotFinalPositions', () => {
+  it('should retunrn the final positions of the robots', () => {
+    expect(getFinalPositions(matrixSize, input)).to.be.deep.equal(expectedOutput);
+  });
+});
