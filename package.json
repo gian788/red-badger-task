@@ -5,7 +5,7 @@
   "license": "UNLICENSED",
   "author": "Gianluca Pengo<gianluca.pengo@gmail.com>",
   "scripts": {
-    "start": "node src/index.js",
+    "start": "node index.js",
     "test": "mocha \"src/*.spec.js\" \"src/**/*.spec.js\"",
     "lint": "eslint src/**/*.js"
   },
